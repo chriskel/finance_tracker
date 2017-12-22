@@ -1,0 +1,8 @@
+<% if params[:action] == 'search' %>
+  <div class="results-block">
+    <%= bootstrap_flash %>
+  </div>
+<% end %>
+
+<td><strong>Profile:</strong> <%= link_to "View Profile", user_path(user),
+                                        class: "btn btn-xs btn-success" %>
